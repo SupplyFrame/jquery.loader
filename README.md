@@ -5,3 +5,6 @@ Youtube like progress bar
 
     $.loader.start();
     $.loader.end();
+
+## Documentation & demo
+[Documentation & demo](http://supplyframe.github.io/jquery.loader)
