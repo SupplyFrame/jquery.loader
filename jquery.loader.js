@@ -94,6 +94,7 @@
     });
 
     $progress.appendTo($holder);
-    $holder.appendTo('body');
-
+    $(function(){
+        $holder.appendTo('body');
+    });
 })(jQuery);
