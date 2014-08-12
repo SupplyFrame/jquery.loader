@@ -1,0 +1,14 @@
+$(document).ready(function(){
+    $('#j-start').click(function(e){
+        $.loader.start();
+    });
+    $('#j-end').click(function(e){
+        $.loader.end();
+    });
+    $('#j-stop').click(function(e){
+        $.loader.stop();
+    });
+    $('#j-reset').click(function(e){
+        $.loader.reset();
+    });
+});
