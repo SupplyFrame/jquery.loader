@@ -1,5 +1,5 @@
 #jquery.loader#
-Loading progress bar
+Youtube like progress bar
 
 #Usage#
 
