@@ -10,19 +10,21 @@
     var interval = null,
         width = 0,
         $holder = $('<div class="jquery-loader-holder"></div>'),
-        $progress = $('<div class="jquery-loader-progress"></div>'); 
+        $progress = $('<div class="jquery-loader-progress"></div>');
 
     function setProgress(width){
-        $progress.css('width', width + '%');        
+        $progress.css('width', width + '%');
     }
 
     $.loader = {
 
         start: function(){
 
-            this.stop();
-            this.reset();
+            if(interval !== null){
+                clearInterval(interval);
+            }
 
+            this.reset();
             $holder.fadeIn();
 
             interval = setInterval(function(){
